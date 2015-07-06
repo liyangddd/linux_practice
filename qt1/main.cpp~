@@ -1,0 +1,12 @@
+#include <QApplication>
+#include <QDialog>
+#include <QLabel>
+
+int main(int args, char **argv) {
+  QApplication app(args, argv);
+  QDialog dlg;
+  QLabel *label = new QLabel("HELLO!");
+  label->show();
+  dlg.setVisible(false);
+  return app.exec();
+}

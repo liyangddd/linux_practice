@@ -1,0 +1,21 @@
+#!/bin/sh
+fun() { 
+for foo in test1 test2 test3
+do
+   echo $foo
+done
+
+for fo in "test test1 test2"
+do
+   echo $fo
+
+echo "Input: "
+read a
+case "$a" in
+   yes | y | Yes | Y | YES ) echo "OK";;
+   n | NO ) echo "NO";;
+esac
+done
+}
+fun
+exit 0 
